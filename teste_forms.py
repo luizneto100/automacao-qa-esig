@@ -19,11 +19,11 @@ time.sleep(3)
 print("Preenchendo formulário...")
 
 # CAMPO NOME (Su bstituao aria-labelledby pelo número que você achar no Inspecionar)
-navegador.find_element(By.XPATH, "//input[@aria-labelledby='i1 i4']").send_keys("Luiz Paiva")
+navegador.find_element(By.XPATH, "//input[@aria-labelledby='i1 i4']").send_keys("Seu nome")
 time.sleep(1) # Pausa rápida para ficar bonito no vídeo
 
 # CAMPO EMAIL (No Forms, geralmente o input de email é o único type='email')
-navegador.find_element(By.XPATH, "//input[@type='email']").send_keys("luizpaiva100@outlook.com")
+navegador.find_element(By.XPATH, "//input[@type='email']").send_keys("nomeproprio@outlook.com")
 time.sleep(1)
 
 # CAMPO CARTÃO DE CRÉDITO (Visa, Mastercard, Elo)
@@ -32,11 +32,11 @@ navegador.execute_script("arguments[0].click();", elemento_visa)
 time.sleep(1)
 
 # CAMPO NÚMERO DO CARTÃO 
-navegador.find_element(By.XPATH, "//input[@aria-labelledby='i25 i28']").send_keys("AAAAAAA")
+navegador.find_element(By.XPATH, "//input[@aria-labelledby='i25 i28']").send_keys("123456789")
 time.sleep(1)
 
 # CAMPO DATA DE NASCIMENTO
-navegador.find_element(By.XPATH, "//input[@type='date']").send_keys("28052002")
+navegador.find_element(By.XPATH, "//input[@type='date']").send_keys("01012002")
 time.sleep(1)
 
 # 4. Clicar em Enviar
