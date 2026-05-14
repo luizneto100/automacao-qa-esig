@@ -20,7 +20,7 @@ print("Preenchendo formulário...")
 
 # CAMPO NOME (Su bstituao aria-labelledby pelo número que você achar no Inspecionar)
 navegador.find_element(By.XPATH, "//input[@aria-labelledby='i1 i4']").send_keys("Seu nome")
-time.sleep(1) # Pausa rápida para ficar bonito no vídeo
+time.sleep(1)
 
 # CAMPO EMAIL (No Forms, geralmente o input de email é o único type='email')
 navegador.find_element(By.XPATH, "//input[@type='email']").send_keys("nomeproprio@outlook.com")
